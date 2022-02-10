@@ -98,6 +98,10 @@ function checkOut() {
                         if((value == 'Cheese')&(!($("img.cheese").length))){
                           $(".images-ing").append("<img class='cheese' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqVkrydS-kSCf0INc4x-TNCKneWh-vi6WwHApPR76rrMQBaEZs6OlUBZzxwMxQPz_-a8&usqp=CAU' alt='cheese' width='100' height='100'>")
                       }
+
+                        if((value == 'Bacon')&(!($("img.bacon").length))){
+                            $(".images-ing").append("<img class='bacon' src='https://i.pinimg.com/originals/9c/20/61/9c206166c6056b1afb3f13976096e5da.jpg' alt='cheese' width='100' height='100'>")
+                        }
                   });
                     $('p.hasToppings').show();
                     $('p.isEmpty').hide();
