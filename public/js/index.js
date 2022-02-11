@@ -106,6 +106,10 @@ function checkOut() {
                         if((value == 'Pineapple')&(!($("img.pineapple").length))){
                             $(".images-ing").append("<img class='pineapple' src='https://thumbs.dreamstime.com/b/simple-pineapple-cute-doodle-drawing-vector-isolated-147650469.jpg' alt='cheese' width='100' height='100'>")
                         }
+
+                        if((value == 'Onion')&(!($("img.onion").length))){
+                            $(".images-ing").append("<img class='onion' src='https://img.freepik.com/free-vector/vector-red-onion-isolated-white-background_1284-46819.jpg?size=626&ext=jpg' alt='cheese' width='100' height='100'>")
+                        }
                   });
                     $('p.hasToppings').show();
                     $('p.isEmpty').hide();
