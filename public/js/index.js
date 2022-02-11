@@ -35,18 +35,25 @@ function getToppings() {
                 showError(json["errormsg"]);
             } else {
                 console.log(json);
-                if (json.toppings.length > 0) {
-                    $("#listToppings").empty();
-                    $(".images-ing").empty();
-                    $.each(json.toppings, function(key, value) {
-                        $("#listToppings").append("<li class='list-group-item d-flex justify-content-between align-items-center'><span>" + value + "</span><span class='badge badge-danger badge-pill' onClick='deleteTopping("+key+")' > Delete<i class='fa-solid fa-xmark'></i></span></li>");
-                    });
-                    $('p.hasToppings').show();
-                    $('p.isEmpty').hide();
+                //Excluding last value to compare later the last value with this one
+                var arrayWithoutLast=  json.toppings.slice(0,-1);
+                //If the topping is already there, show message
+                if( ($.inArray(json.toppings[json.toppings.length-1], arrayWithoutLast) != -1)  ){
+                    showError('You have already listed that topping');
                 } else {
-                    $("#listToppings").empty();
-                    $('p.hasToppings').hide();
-                    $('p.isEmpty').show();
+                    if (json.toppings.length > 0) {
+                        $("#listToppings").empty();
+                        $(".images-ing").empty();
+                        $.each(json.toppings, function(key, value) {
+                            $("#listToppings").append("<li class='list-group-item d-flex justify-content-between align-items-center'><span>" + value + "</span><span class='badge badge-danger badge-pill' onClick='deleteTopping("+key+")' > Delete<i class='fa-solid fa-xmark'></i></span></li>");
+                        });
+                        $('p.hasToppings').show();
+                        $('p.isEmpty').hide();
+                    } else {
+                        $("#listToppings").empty();
+                        $('p.hasToppings').hide();
+                        $('p.isEmpty').show();
+                    }
                 }
             }
         },
@@ -109,6 +116,10 @@ function checkOut() {
 
                         if((value == 'Onion')&(!($("img.onion").length))){
                             $(".images-ing").append("<img class='onion' src='https://img.freepik.com/free-vector/vector-red-onion-isolated-white-background_1284-46819.jpg?size=626&ext=jpg' alt='cheese' width='100' height='100'>")
+                        }
+
+                        if((value == 'Pepper')&(!($("img.peppern").length))){
+                            $(".images-ing").append("<img class='pepper' src='https://i.pinimg.com/originals/7a/81/98/7a8198d5a3c162f2dbe764ff34790eba.jpg' alt='cheese' width='100' height='100'>")
                         }
                   });
                     $('p.hasToppings').show();
