@@ -127,7 +127,7 @@ function printForm()
 
 		<div class="main">
 			<div class= "welcome">
-				WELCOME TO THE MOST DELICIOUS PIZZAS
+				WELCOME TO THE MOST DELICIOUS PIZZAS IN TOWN
 			</div>
 			<div class="select-pizza">
 				<div class="div">
