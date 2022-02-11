@@ -118,8 +118,20 @@ function checkOut() {
                             $(".images-ing").append("<span class='image-ingredient'><img class='onion' src='https://img.freepik.com/free-vector/vector-red-onion-isolated-white-background_1284-46819.jpg?size=626&ext=jpg' alt='cheese' width='100' height='100'></span>")
                         }
 
-                        if((value == 'Pepper')&(!($("img.peppern").length))){
+                        if((value == 'Pepper')&(!($("img.pepper").length))){
                             $(".images-ing").append("<span class='image-ingredient'><img class='pepper' src='https://i.pinimg.com/originals/7a/81/98/7a8198d5a3c162f2dbe764ff34790eba.jpg' alt='cheese' width='100' height='100'></span>")
+                        }
+
+                        if((value == 'Pepperoni')&(!($("img.pepperoni").length))){
+                            $(".images-ing").append("<span class='image-ingredient'><img class='pepperoni' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKSBekQRUgFhgaJJCtEhdn8knMoO_KwNRQbhfox8V1awAFVoXPDohII6eFqn7UqjDqK74&usqp=CAU' alt='cheese' width='100' height='100'></span>")
+                        }
+
+                        if((value == 'Tomato')&(!($("img.Tomato").length))){
+                            $(".images-ing").append("<span class='image-ingredient'><img class='Tomato' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInZMeqIDx7-fqOhdlPeqMt6sq74cqWvLxnqKoRSGR305opfaPuAzKO2rgtRtVbopwQAU&usqp=CAU' alt='cheese' width='100' height='100'></span>")
+                        }
+
+                        if((value == 'Champignon')&(!($("img.Champignon").length))){
+                            $(".images-ing").append("<span class='image-ingredient'><img class='Champignon' src='https://cdn5.vectorstock.com/i/thumb-large/32/69/appetizing-slices-eco-champignon-mushrooms-vector-34863269.jpg' alt='cheese' width='100' height='100'></span>")
                         }
                   });
                     $('p.hasToppings').show();

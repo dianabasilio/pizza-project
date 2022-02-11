@@ -127,7 +127,11 @@ function printForm()
 
 		<div class="main">
 			<div class= "welcome">
+				<img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c1e1.png" width="120" height="70">
+				<div class="town">
 				WELCOME TO THE MOST DELICIOUS PIZZAS IN TOWN
+				</div>
+				<img src="https://pngimg.com/uploads/pizza/pizza_PNG44084.png" width="120" height="70">
 			</div>
 			<div class="select-pizza">
 				<div class="div">
@@ -149,6 +153,9 @@ function printForm()
 							<option value="Pineapple">Pineapple</option>
 							<option value="Onion">Onion</option>
 							<option value="Pepper">Pepper</option>
+							<option value="Pepperoni">Pepperoni</option>
+							<option value="Tomato">Tomato</option>
+							<option value="Champignon">Champignon</option>
 						</select>
 					</div>
 
