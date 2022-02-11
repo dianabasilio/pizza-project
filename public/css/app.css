@@ -16,6 +16,25 @@ header{
 nav.navbar{
     background-color: #FC4800 ;
 }
+.div{
+    margin: 20px;
+}
+.select-pizza{
+    margin: 30px;
+}
+.fa-pizza-slice{
+    padding: 11px;
+    transition: transform 1s;
+}
+.fa-pizza-slice:hover{
+    transform: rotate(-90deg);
+}
+.pizza-middle{
+    font-size: 30px;
+}
+.pizza-big{
+    font-size: 60px;
+}
 
 .image-ingredient{
     margin: 50px 10px ;
@@ -40,6 +59,7 @@ nav.navbar{
 }
 
 .content{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;

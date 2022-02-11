@@ -129,6 +129,16 @@ function printForm()
 			<div class= "welcome">
 				WELCOME TO THE MOST DELICIOUS PIZZAS
 			</div>
+			<div class="select-pizza">
+				<div class="div">
+					Select your pizza size
+				</div>
+				<div>
+					<i class="fa fa-solid fa-pizza-slice pizza-small"></i>
+					<i class="fa fa-solid fa-pizza-slice pizza-middle"></i>
+					<i class="fa fa-solid fa-pizza-slice pizza-big"></i>
+				</div>
+			</div>
 			<div class= "content">
 				<label for="topping">What topping would you like?</label>
 				<div class= "content-2">
@@ -160,6 +170,7 @@ function printForm()
 						<button type="button" id="edit" onClick="edit()" >Edit order <i class="fa fa-solid fa-pen-to-square"></i> </button>
 				</div>
 			</div>
+
 		</div>
 		<script src="./public/js/index.js"></script>
 	</body>

@@ -145,3 +145,29 @@ function showError(message) {
 function edit() {
     getToppings();
 }
+
+
+
+  $(document).ready(function(){
+    $(".pizza-small").on({
+        click: function(){
+            $(this).css("color", "#FC4800");
+            $('.pizza-middle').css("color", "black");
+            $('.pizza-big').css("color", "black");
+            }  
+    });
+    $(".pizza-middle").on({
+        click: function(){
+            $(this).css("color", "#FC4800");
+            $('.pizza-small').css("color", "black");
+            $('.pizza-big').css("color", "black");
+            }  
+    });
+    $(".pizza-big").on({
+        click: function(){
+            $(this).css("color", "#FC4800");
+            $('.pizza-middle').css("color", "black");
+            $('.pizza-small').css("color", "black");
+            }  
+    });
+});
