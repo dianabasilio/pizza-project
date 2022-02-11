@@ -21,7 +21,7 @@ switch($_GET['action']){
 				$result['success'] = 1;
 			}else{
 				$result['success'] = 0;
-				$result['errormsg'] = 'Topping already there';
+				$result['errormsg'] = 'Topping already selected';
 			}
 
 		} else {
@@ -126,36 +126,38 @@ function printForm()
 	<body>
 
 		<div class="main">
-			<div>
+			<div class= "welcome">
+				WELCOME TO THE MOST DELICIOUS PIZZAS
+			</div>
+			<div class= "content">
+				<label for="topping">What topping would you like?</label>
+				<div class= "content-2">
+					<div>
+						<select name="topping" id="topping" class="">
+							<option value="Cheese">Cheese</option>
+							<option value="Bacon">Bacon</option>
+							<option value="Pineapple">Pineapple</option>
+							<option value="Onion">Onion</option>
+							<option value="Pepper">Pepper</option>
+						</select>
+					</div>
+
+					<div>
+						<button type="button" onclick="addTopping()">Add it! <i class="fa fa-solid fa-plus"></i> </button>
+					</div>
+				</div>
 				<div>
-					<label for="topping">What topping would you like?</label>
-					<div>
-					<select name="topping" id="topping" class="">
-						<option value="Cheese">Cheese</option>
-						<option value="Bacon">Bacon</option>
-						<option value="Pineapple">Pineapple</option>
-						<option value="Onion">Onion</option>
-						<option value="Pepper">Pepper</option>
-					</select>
+					<ul id="listToppings"></ul>
+				</div>
+				<div class="check-out">
+					<div class="images-ing"></div>
+				</div>
 
-						<div>
-							<button type="button" onclick="addTopping()">Add it!</button>
-						</div>
-					</div>
-					<div>
-						<ul id="listToppings"></ul>
-						<i class='fas fa-kiwi-bird'></i>
-					</div>
-					<div class="check-out">
-						<div class="images-ing"></div>
-					</div>
-
-					<div>
-							<button type="button" onclick="checkOut()">Go to check out!</button>
-					</div>
-					<div class="edit-button">
-							<button type="button" id="edit" onClick="edit()" >Edit order</button>
-					</div>
+				<div>
+						<button type="button" onclick="checkOut()">Go to check out! <i class="fa fa-solid fa-basket-shopping"></i> </button>
+				</div>
+				<div class="edit-button">
+						<button type="button" id="edit" onClick="edit()" >Edit order <i class="fa fa-solid fa-pen-to-square"></i> </button>
 				</div>
 			</div>
 		</div>
