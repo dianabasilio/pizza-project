@@ -103,23 +103,23 @@ function checkOut() {
                     $("#listToppings").empty();
                     $.each(json.toppings, function(key, value) {
                         if((value == 'Cheese')&(!($("img.cheese").length))){
-                          $(".images-ing").append("<img class='cheese' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqVkrydS-kSCf0INc4x-TNCKneWh-vi6WwHApPR76rrMQBaEZs6OlUBZzxwMxQPz_-a8&usqp=CAU' alt='cheese' width='100' height='100'>")
+                          $(".images-ing").append("<span class='image-ingredient'><img class='cheese' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqVkrydS-kSCf0INc4x-TNCKneWh-vi6WwHApPR76rrMQBaEZs6OlUBZzxwMxQPz_-a8&usqp=CAU' alt='cheese' width='100' height='100'></span>")
                       }
 
                         if((value == 'Bacon')&(!($("img.bacon").length))){
-                            $(".images-ing").append("<img class='bacon' src='https://i.pinimg.com/originals/9c/20/61/9c206166c6056b1afb3f13976096e5da.jpg' alt='cheese' width='100' height='100'>")
+                            $(".images-ing").append("<span class='image-ingredient'><img class='bacon' src='https://i.pinimg.com/originals/9c/20/61/9c206166c6056b1afb3f13976096e5da.jpg' alt='cheese' width='100' height='100'></span>")
                         }
                         
                         if((value == 'Pineapple')&(!($("img.pineapple").length))){
-                            $(".images-ing").append("<img class='pineapple' src='https://thumbs.dreamstime.com/b/simple-pineapple-cute-doodle-drawing-vector-isolated-147650469.jpg' alt='cheese' width='100' height='100'>")
+                            $(".images-ing").append("<span class='image-ingredient'><img class='pineapple' src='https://thumbs.dreamstime.com/b/simple-pineapple-cute-doodle-drawing-vector-isolated-147650469.jpg' alt='cheese' width='100' height='100'></span>")
                         }
 
                         if((value == 'Onion')&(!($("img.onion").length))){
-                            $(".images-ing").append("<img class='onion' src='https://img.freepik.com/free-vector/vector-red-onion-isolated-white-background_1284-46819.jpg?size=626&ext=jpg' alt='cheese' width='100' height='100'>")
+                            $(".images-ing").append("<span class='image-ingredient'><img class='onion' src='https://img.freepik.com/free-vector/vector-red-onion-isolated-white-background_1284-46819.jpg?size=626&ext=jpg' alt='cheese' width='100' height='100'></span>")
                         }
 
                         if((value == 'Pepper')&(!($("img.peppern").length))){
-                            $(".images-ing").append("<img class='pepper' src='https://i.pinimg.com/originals/7a/81/98/7a8198d5a3c162f2dbe764ff34790eba.jpg' alt='cheese' width='100' height='100'>")
+                            $(".images-ing").append("<span class='image-ingredient'><img class='pepper' src='https://i.pinimg.com/originals/7a/81/98/7a8198d5a3c162f2dbe764ff34790eba.jpg' alt='cheese' width='100' height='100'></span>")
                         }
                   });
                     $('p.hasToppings').show();

@@ -110,7 +110,7 @@ function printForm()
 		<script src="./jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/74f3529e12.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="./public/css/app.css"></script>
+		<link rel="stylesheet" href="./public/css/app.css?v=<?php echo time(); ?>"></script>
 	</head>
 	<header>
 		<!-- Image and text -->
@@ -146,7 +146,10 @@ function printForm()
 						<ul id="listToppings"></ul>
 						<i class='fas fa-kiwi-bird'></i>
 					</div>
-					<p class="images-ing"></p>
+					<div class="check-out">
+						<div class="images-ing"></div>
+					</div>
+
 					<div>
 							<button type="button" onclick="checkOut()">Go to check out!</button>
 					</div>

@@ -13,3 +13,13 @@ header{
 nav.navbar{
     background-color: #FC4800 ;
 }
+
+.image-ingredient{
+    margin: 50px 10px ;
+    padding: 50px 20px;
+    background-color: #FC4800 ;
+}
+
+.check-out{
+    margin: 3% ;  
+}
