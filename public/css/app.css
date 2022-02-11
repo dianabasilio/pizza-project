@@ -23,3 +23,18 @@ nav.navbar{
 .check-out{
     margin: 3% ;  
 }
+
+button{
+    transition: box-shadow,.3s;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #FC4800;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    box-shadow: 0 0 11px rgba(100, 100, 100,.8); 
+
+}
