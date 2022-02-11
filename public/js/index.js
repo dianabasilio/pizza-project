@@ -141,3 +141,7 @@ function checkOut() {
 function showError(message) {
     alert("ERROR: " + message);
 }
+
+function edit() {
+    getToppings();
+}

@@ -153,6 +153,9 @@ function printForm()
 					<div>
 							<button type="button" onclick="checkOut()">Go to check out!</button>
 					</div>
+					<div class="edit-button">
+							<button type="button" id="edit" onClick="edit()" >Edit order</button>
+					</div>
 				</div>
 			</div>
 		</div>
