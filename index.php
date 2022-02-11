@@ -16,8 +16,14 @@ switch($_GET['action']){
 			if (!isset($_SESSION['toppings'])) {
 				$_SESSION['toppings'] = array();
 			}
-			$_SESSION['toppings'][] = $_GET['topping'];
-			$result['success'] = 1;
+			if (!in_array($_GET['topping'], $_SESSION['toppings'])){
+				$_SESSION['toppings'][] = $_GET['topping'];
+				$result['success'] = 1;
+			}else{
+				$result['success'] = 0;
+				$result['errormsg'] = 'Topping already there';
+			}
+
 		} else {
 			$result['success'] = 0;
 			$result['errormsg'] = 'No Topping Entered';
